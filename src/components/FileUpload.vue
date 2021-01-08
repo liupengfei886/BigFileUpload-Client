@@ -133,8 +133,7 @@ export default {
   methods: {
     // 取消文件选择，并重置input框
     cancelFile () {
-      this.chunkDoneTotal = 0
-      this.chunkTotal = 0
+      this.showFileInfo = false
       this.file = null
       this.$refs.fileElem.value = null
     },
